@@ -1,0 +1,583 @@
+@charset "utf-8";
+
+/*
+
+   Castellanos Website Project 2
+   Semester Spring 2022
+   
+   Author: Michael Castellanos
+   Date: 4/13/2022    
+   Filenames: index, history, housing, parks, events
+*/
+
+/* Body Styles */
+
+body {
+   margin: 0;
+   color: black;
+   background: linear-gradient(to bottom, #08038F, #695fb3, white);
+}
+
+#welcome {
+   font-size: 16pt;
+   text-align: center;
+   width: 75%;
+   margin: auto;
+   background: tan;
+   border: solid green 3px;
+   border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+}
+
+#addinfo {
+   font-size: 15pt;
+   width: 75%;
+   text-align: center;
+   margin: auto;
+   background: tan;
+   border-top: solid tan 3px;
+   border-bottom: solid green 3px;
+   border-left: solid green 3px;
+   border-right: solid green 3px;
+   border-bottom-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+
+}
+
+#contact a:link, #contact a:visited {
+	color: red;
+}
+	
+#contact {
+   font-size: 15pt;
+   text-align: left;
+   width: 75%;
+   margin: auto;
+   border: solid green 3px;
+   background: tan;
+
+}
+
+/* Header Syles */
+
+header {
+	background: #08038F;
+	overflow: hidden;
+	border-bottom: 3px solid white;
+}
+
+header h1 {
+	position: relative;
+	text-align: center;
+	color: white;
+	font: 800% copperplate, fantasy;
+	text-shadow: 15px 15px 25px black;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
+}
+
+img.hawthornepic {
+	display: block;
+	width: 100%;
+}
+/*
+Navigation
+*/
+
+#nav nav ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom,  #0E0961, black);
+    font: 20px times-new-roman, serif;
+}
+
+
+#nav nav li {
+    float: left;
+    display: block;
+    width: 20%;
+}
+
+#nav nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li.submenuTitle {
+	color: white;
+}
+
+#nav nav li a:hover:not(.active) {
+    background-color: gray;
+}
+
+#nav nav .active {
+    background-color: #4CAF50;
+}
+
+#histnav nav ul {
+   list-style-type: none;
+   margin-left: 5px;
+   margin-top: 0;
+   padding: 0;
+   width: 160px;
+   background: linear-gradient(to bottom, #03103b, black);
+   float: left;
+   clear: right;
+}
+
+#histnav nav li a {
+   display: block;
+   color: white;
+   padding: 8px 16px;
+   text-decoration: none;
+}
+
+#histnav nav li a:hover:not(.active) {
+    background-color: gray;
+}
+
+#histnav nav .active {
+    background-color: #4CAF50;
+}
+
+#parknav nav ul {
+   list-style-type: none;
+   margin-left: 5px;
+   margin-top: 0;
+   padding: 0;
+   width: 160px;
+   background: linear-gradient(to bottom, #03103b, black);
+   float: left;
+   clear: right;
+}
+
+#parknav nav li a {
+   display: block;
+   color: white;
+   padding: 8px 16px;
+   text-decoration: none;
+}
+
+#parknav nav li a:hover:not(.active) {
+    background-color: gray;
+}
+
+#parknav nav .active {
+    background-color: #4CAF50;
+}
+
+/* Home Page Styles */
+#houses {
+   font-size: 16pt;
+   text-align: left;
+   width: 75%;
+   font-size: 15pt;
+   margin: auto;
+   background: tan;
+   border-top: solid tan 3px;
+   border-bottom: solid blue 3px;
+   border-left: solid blue 3px;
+   border-right: solid blue 3px;
+}
+
+
+#homesofhawthorne {
+   font-size: 16pt;
+   text-align: center;
+   width: 75%;
+   margin: auto;
+   background: tan;
+   border-top: solid blue 3px;
+   border-bottom: solid tan 3px;
+   border-left: solid blue 3px;
+   border-right: solid blue 3px;
+}
+
+#houses img {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+div#houses::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+div#apart {
+	float: left;
+	clear: right;
+	width: 30%;
+}
+.house_img {
+	width: 55%;
+	float:right;
+	margin-left: 0;
+}
+/* Image Styles */
+
+img {
+	margin-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/* Parks and Rec Styles */
+
+div#parks_container, div#rec_container {
+	overflow: hidden;
+	font-size: 15pt;
+   	width: 75%;
+	margin-left: 15%;
+	margin-right: 10%;
+   	background: tan;
+   	border: solid blue 3px;
+	vertical-align: middle;
+}
+div#parks_container figure img, div#rec_container img {
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#parks_container h2, div#rec_container h2 {
+	text-align: center;
+}
+
+dl {
+	width: 500px;
+	float: left;
+	clear: right;
+}
+
+/* History Page */
+div#hist1, div#hist2, div#hist3, div#hist4 {
+	overflow:hidden;
+    margin-left: 15%;
+	margin-right: 10%;
+	font-size: 25px;
+	border: solid black 3px;
+	text-align: center;
+	width: 75%;
+}
+
+div#hist1 {
+background: #98b1d9;
+color: black;
+}
+div#hist2 {
+background: #0ED0D3;
+color: black;
+}
+div#hist3 {
+background: #2dc23e;
+color: white;
+}
+div#hist4 {
+background: #c43118;
+color: white;
+}
+
+
+div#hist4 img {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 250px;
+}
+
+
+div#hist4_img {
+	display: flex;
+	flex-direction: row;
+    width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+div#hist1 ul, div#hist2 ul, div#hist3 ul, div#hist4 ul {
+	display: inline-block;
+	text-align: left;
+}
+
+
+/* Table Styles */
+
+table {
+	text-align: center;
+	border: 5px solid black;
+	border-spacing: 5px;
+	border-collapse: collapse;
+	font-size: 20px;
+}
+
+tr.days {
+border: 3px solid black;
+}
+
+tr, th, td {
+	border: none;
+	width: 700px;
+	height: 75px;
+}
+
+th {
+border: 3px solid black;
+}
+
+tr {
+	height: 40px;
+	font-size: 1.5em;
+}
+
+td.blank {
+	background: #e83f2c;
+}
+
+caption {
+	font-weight: 700;
+	font-size: 50px;
+	font: 500% copperplate, fantasy;
+	text-shadow: 8px 8px 15px black;
+	text-align: center;
+	color: white;
+}
+
+thead {
+	background: #000082;
+	color: white;
+	font-size: 1.5em;
+}
+
+tbody {
+	background: tan;
+}
+
+/* Footer Styles */
+footer {
+	margin-top: 15px;
+	border: 2px solid black;
+	text-align: center;
+	background: #9a8feb;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	color: black;
+	font-size: 1.1em;
+}
+
+table {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: stretch;
+		flex-grow: 1;
+		flex-shrink: 2;
+		flex-basis: auto;
+	}
+	
+/* Media Styles */
+
+@media only screen and (max-width: 480px) {
+	header h1 {
+		font-size: 50px;
+	}
+
+	#welcome, #addinfo, #contact, #footer, #apart, #homesofhawthorne, div#parks_container, div#rec_container, div#hist1, div#hist2, div#hist3, div#hist4 {
+	font-size: 18px;
+	}
+
+	img.hawthornepic {
+	width: 105%;
+	float: left;
+	clear: right;
+	}
+
+	div#parks_container, div#rec_container {
+		overflow: hidden;
+		margin: auto;		
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	#homesofhawthorne {
+   		margin: auto;
+	}
+
+	
+	div#hist3_img {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	div#hist4_img {
+		display: flex;
+		flex-direction: column;
+		width: 120%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div#parks_container figure img, div#rec_container img {
+	display: block;
+	width: 110%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	/* Navigation */
+	
+	ul.submenu {
+		display: none;
+	}
+	nav ul {
+		display: block;
+	}
+
+	a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+		display: block;
+
+	}
+	
+	nav ul {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	nav li {
+		flex: 1 1 auto;
+	}
+
+	nav.deskMenu {
+		display: none;
+	}
+
+	ul.submenu li {
+		display:block;
+		float:left;
+		clear: left;
+		width:300px;
+		padding: 0px;
+	}
+	
+	div#histnav ul, div#parknav ul {
+		display: block;
+		float: left;
+		clear: right;
+	}
+
+
+
+	/* Housing Images */
+
+	div#house_img {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	div#apart {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+
+	 /* Table */ 
+
+	caption {
+	font-weight: 400;
+	font-size: 45px;
+	}
+	
+	tr {
+	margin: 0.1em 0;
+	font-size: 10px;
+	}
+
+ 	td, th {
+	font-size: 10px;
+	} 
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+	div#parks_container, div#rec_container {
+		overflow: hidden;
+		font-size: 15pt;
+   		width: 80%;
+		margin: auto;
+		padding-left: 10px;
+		display: block;
+		vertical-align: middle;
+	}
+
+
+	div#parks_container figure img, div#rec_container img {
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	nav ul.mainmenu {
+		display:none;
+	}
+
+	div#house_img {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+
+	div#hist4_img {
+		display: flex;
+		flex-direction: column;
+		width: 120%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Table */
+
+	caption {
+	font-weight: 400;
+	font-size: 45px;
+	}
+	
+	tr {
+	font-size: 18px;
+	}
+
+ 	td, th {
+   
+	font-size: 20px;
+	} 
+}
+
+@media only screen and (min-width: 769px) {
+	
+	nav ul.mainmenu {
+		display:none;
+	}
+	
+}

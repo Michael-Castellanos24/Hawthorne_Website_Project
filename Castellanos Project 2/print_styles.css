@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*
+
+   Castellanos Website Project 2
+   Semester Spring 2022
+   
+   Author: Michael Castellanos
+   Date: 4/13/2022    
+   File Name: print_styles.css
+*/
+
+/* Hidden Objects */
+
+nav, footer, figure, border {
+	display: none;
+}
+
+@page {
+	size: 8.5in 11in;
+	margin: 0.5in;
+}
+
+
+/* Header Styles */
+
+body > header {
+   text-align: center;
+}
+
+
+/* Typography Styles */
+
+header h1 {
+	font-size: 40pt;
+	line-height: 30pt;
+	margin: 0.3in 0in 0.2in;
+}
+
+h2 {
+	font-size: 20pt;
+	margin: 0.1in 0in 0.1in 0.3in;
+	text-align: center;
+}
+
+p {
+	font-size: 12pt;
+	margin: 0.1in 0in 0.1in 0.3in;
+}
+
+/* Hypertext Styles */
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a::after {
+	content: " (" attr(href) ") ";
+}
+
